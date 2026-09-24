@@ -1,0 +1,54 @@
+{
+  "name": "linguaflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LINGUAFLOW - Học từ vựng tiếng Anh & tiếng Trung. Ghi nhớ lâu hơn. Sử dụng tự nhiên hơn.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:push": "prisma db push",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:setup": "prisma db push && tsx prisma/seed.ts",
+    "postinstall": "prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.7.4",
+    "@hookform/resolvers": "^3.10.0",
+    "@prisma/client": "^6.5.0",
+    "bcryptjs": "^2.4.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.474.0",
+    "next": "15.2.4",
+    "next-auth": "^5.0.0-beta.25",
+    "next-themes": "^0.4.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.54.2",
+    "recharts": "^2.15.1",
+    "sonner": "^1.7.2",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@tailwindcss/postcss": "^4.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.13.1",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^9.20.1",
+    "eslint-config-next": "15.2.4",
+    "prisma": "^6.5.0",
+    "tailwindcss": "^4.0.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

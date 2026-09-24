@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: 175 42% 98%;
+  --foreground: 175 35% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 175 35% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 175 35% 12%;
+  --primary: 175 80% 29%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 170 42% 94%;
+  --secondary-foreground: 175 55% 20%;
+  --muted: 175 30% 95%;
+  --muted-foreground: 175 12% 44%;
+  --accent: 154 45% 92%;
+  --accent-foreground: 163 60% 20%;
+  --destructive: 2 72% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 152 72% 32%;
+  --warning: 35 85% 45%;
+  --border: 175 22% 89%;
+  --input: 175 20% 86%;
+  --ring: 175 80% 42%;
+  --radius: 18px;
+}
+
+.dark {
+  --background: 175 40% 7%;
+  --foreground: 175 18% 92%;
+  --card: 175 32% 10.5%;
+  --card-foreground: 175 18% 92%;
+  --popover: 175 32% 10.5%;
+  --popover-foreground: 175 18% 92%;
+  --primary: 175 75% 48%;
+  --primary-foreground: 175 60% 7%;
+  --secondary: 175 25% 16%;
+  --secondary-foreground: 175 40% 86%;
+  --muted: 175 25% 14%;
+  --muted-foreground: 175 12% 66%;
+  --accent: 163 35% 20%;
+  --accent-foreground: 154 50% 84%;
+  --destructive: 2 60% 52%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 152 55% 46%;
+  --warning: 38 85% 55%;
+  --border: 175 20% 20%;
+  --input: 175 20% 24%;
+  --ring: 175 75% 50%;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 12px);
+
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-fade-up: fade-up 0.35s ease-out both;
+  --animate-scale-in: scale-in 0.18s ease-out both;
+
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scale-in {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl dark:bg-[hsl(175_32%_10.5%_/0.7)];
+  }
+
+  .gradient-card {
+    @apply bg-gradient-to-br from-primary/10 via-card to-card dark:from-primary/5 dark:via-card dark:to-card;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-border;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+kbd {
+  @apply inline-flex h-6 min-w-6 items-center justify-center rounded-md border border-border bg-muted px-1.5 font-mono text-[11px] font-semibold text-muted-foreground;
+}

@@ -1,0 +1,128 @@
+import type { SeedWord } from "./types";
+
+// 105+ từ tiếng Anh - 10 chủ đề
+export const englishWords: SeedWord[] = [
+  // ---------- Giao tiếp hằng ngày ----------
+  { word: "greet", ipa: "/ɡriːt/", meaning: "chào hỏi", pos: "verb", example: "We greet our neighbors every morning.", exampleVi: "Chúng tôi chào hỏi hàng xóm mỗi sáng.", difficulty: 1, level: "A1", topic: "giao-tiep-hang-ngay", common: true },
+  { word: "conversation", ipa: "/ˌkɒnvəˈseɪʃn/", meaning: "cuộc trò chuyện", pos: "noun", example: "We had a long conversation about travel.", exampleVi: "Chúng tôi đã có một cuộc trò chuyện dài về du lịch.", difficulty: 2, level: "A2", topic: "giao-tiep-hang-ngay", common: true },
+  { word: "friendly", ipa: "/ˈfrendli/", meaning: "thân thiện", pos: "adjective", example: "She is very friendly with new people.", exampleVi: "Cô ấy rất thân thiện với người mới.", difficulty: 1, level: "A1", topic: "giao-tiep-hang-ngay", common: true },
+  { word: "apologize", ipa: "/əˈpɒlədʒaɪz/", meaning: "xin lỗi", pos: "verb", example: "I apologize for being late.", exampleVi: "Tôi xin lỗi vì đến muộn.", difficulty: 3, level: "A2", topic: "giao-tiep-hang-ngay" },
+  { word: "suggest", ipa: "/səˈdʒest/", meaning: "gợi ý, đề nghị", pos: "verb", example: "I suggest taking a short break.", exampleVi: "Tôi gợi ý nên nghỉ giải lao ngắn.", difficulty: 2, level: "A2", topic: "giao-tiep-hang-ngay" },
+  { word: "complain", ipa: "/kəmˈpleɪn/", meaning: "phàn nàn", pos: "verb", example: "He complained about the loud noise.", exampleVi: "Anh ấy phàn nàn về tiếngồn to.", difficulty: 3, level: "A2", topic: "giao-tiep-hang-ngay" },
+  { word: "invite", ipa: "/ɪnˈvaɪt/", meaning: "mời", pos: "verb", example: "They invited us to dinner.", exampleVi: "Họ mời chúng tôi ăn tối.", difficulty: 1, level: "A2", topic: "giao-tiep-hang-ngay", common: true },
+  { word: "hurry", ipa: "/ˈhʌri/", meaning: "vội vàng, nhanh lên", pos: "verb", example: "Hurry up, we are going to be late!", exampleVi: "Nhanh lên, chúng ta sẽ muộn mất!", difficulty: 2, level: "A2", topic: "giao-tiep-hang-ngay" },
+  { word: "interrupt", ipa: "/ˌɪntəˈrʌpt/", meaning: "ngắt lời", pos: "verb", example: "Please do not interrupt me.", exampleVi: "Xin đừng ngắt lời tôi.", difficulty: 3, level: "B1", topic: "giao-tiep-hang-ngay" },
+  { word: "polite", ipa: "/pəˈlaɪt/", meaning: "lịch sự", pos: "adjective", example: "It is polite to say thank you.", exampleVi: "Nói cảm ơn là điều lịch sự.", difficulty: 1, level: "A2", topic: "giao-tiep-hang-ngay", common: true },
+  { word: "greeting", ipa: "/ˈɡriːtɪŋ/", meaning: "lời chào", pos: "noun", example: "A warm greeting made me happy.", exampleVi: "Lời chào ấm áp khiến tôi vui.", difficulty: 2, level: "A2", topic: "giao-tiep-hang-ngay" },
+
+  // ---------- Du lịch ----------
+  { word: "luggage", ipa: "/ˈlʌɡɪdʒ/", meaning: "hành lý", pos: "noun", example: "My luggage was lost at the airport.", exampleVi: "Hành lý của tôi bị lạc ở sân bay.", difficulty: 3, level: "A2", topic: "du-lich" },
+  { word: "destination", ipa: "/ˌdestɪˈneɪʃn/", meaning: "điểm đến", pos: "noun", example: "Our final destination is Da Nang.", exampleVi: "Điểm đến cuối cùng của chúng tôi là Đà Nẵng.", difficulty: 4, level: "B1", topic: "du-lich" },
+  { word: "passport", ipa: "/ˈpɑːspɔːt/", meaning: "hộ chiếu", pos: "noun", example: "Do not forget your passport.", exampleVi: "Đừng quên hộ chiếu của bạn.", difficulty: 2, level: "A2", topic: "du-lich", common: true },
+  { word: "souvenir", ipa: "/ˌsuːvəˈnɪə/", meaning: "quà lưu niệm", pos: "noun", example: "I bought a souvenir for my mom.", exampleVi: "Tôi đã mua một món quà lưu niệm cho mẹ.", difficulty: 4, level: "B1", topic: "du-lich" },
+  { word: "flight", ipa: "/flaɪt/", meaning: "chuyến bay", pos: "noun", example: "The flight was delayed by two hours.", exampleVi: "Chuyến bay bị hoãn hai tiếng.", difficulty: 2, level: "A2", topic: "du-lich", common: true },
+  { word: "book", ipa: "/bʊk/", meaning: "đặt (vé, phòng)", pos: "verb", example: "I booked a hotel room online.", exampleVi: "Tôi đã đặt phòng khách sạn qua mạng.", difficulty: 1, level: "A2", topic: "du-lich", common: true },
+  { word: "abroad", ipa: "/əˈbrɔːd/", meaning: "ở nước ngoài", pos: "adverb", example: "She is studying abroad this year.", exampleVi: "Cô ấy đang du học ở nước ngoài năm nay.", difficulty: 3, level: "B1", topic: "du-lich" },
+  { word: "tourist", ipa: "/ˈtʊərɪst/", meaning: "du khách", pos: "noun", example: "The city is full of tourists in summer.", exampleVi: "Thành phố tràn ngập du khách vào mùa hè.", difficulty: 1, level: "A2", topic: "du-lich", common: true },
+  { word: "scenery", ipa: "/ˈsiːnəri/", meaning: "phong cảnh", pos: "noun", example: "The scenery along the coast is breathtaking.", exampleVi: "Phong cảnh dọc bờ biển thật ngoạn mục.", difficulty: 4, level: "B1", topic: "du-lich" },
+  { word: "border", ipa: "/ˈbɔːdə/", meaning: "biên giới", pos: "noun", example: "We waited two hours at the border.", exampleVi: "Chúng tôi chờ hai tiếng ở biên giới.", difficulty: 3, level: "B1", topic: "du-lich" },
+  { word: "currency", ipa: "/ˈkʌrənsi/", meaning: "tiền tệ", pos: "noun", example: "What is the local currency here?", exampleVi: "Tiền tệ địa phương ở đây là gì?", difficulty: 4, level: "B1", topic: "du-lich" },
+
+  // ---------- Business ----------
+  { word: "negotiate", ipa: "/nɪˈɡəʊʃieɪt/", meaning: "đàm phán", pos: "verb", example: "They negotiated a much better price.", exampleVi: "Họ đã đàm phán được một mức giá tốt hơn nhiều.", difficulty: 5, level: "B2", topic: "business" },
+  { word: "deadline", ipa: "/ˈdedlaɪn/", meaning: "hạn chót", pos: "noun", example: "The deadline is next Friday.", exampleVi: "Hạn chót là vào thứ Sáu tuần sau.", difficulty: 4, level: "B1", topic: "business", common: true },
+  { word: "revenue", ipa: "/ˈrevənjuː/", meaning: "doanh thu", pos: "noun", example: "Revenue increased by twenty percent this year.", exampleVi: "Doanh thu tăng hai mươi phần trăm trong năm nay.", difficulty: 5, level: "B2", topic: "business" },
+  { word: "client", ipa: "/ˈklaɪənt/", meaning: "khách hàng, đối tác", pos: "noun", example: "We signed a new client yesterday.", exampleVi: "Chúng tôi đã ký được một khách hàng mới hôm qua.", difficulty: 3, level: "B1", topic: "business" },
+  { word: "contract", ipa: "/ˈkɒntrækt/", meaning: "hợp đồng", pos: "noun", example: "Read the contract carefully before signing.", exampleVi: "Hãy đọc hợp đồng cẩn thận trước khi ký.", difficulty: 4, level: "B1", topic: "business", common: true },
+  { word: "invest", ipa: "/ɪnˈvest/", meaning: "đầu tư", pos: "verb", example: "They invested in a small startup.", exampleVi: "Họ đã đầu tư vào một công ty khởi nghiệp nhỏ.", difficulty: 4, level: "B1", topic: "business" },
+  { word: "profit", ipa: "/ˈprɒfɪt/", meaning: "lợi nhuận", pos: "noun", example: "The company made a huge profit.", exampleVi: "Công ty đã thu về lợi nhuận khổng lồ.", difficulty: 4, level: "B1", topic: "business", common: true },
+  { word: "strategy", ipa: "/ˈstrætədʒi/", meaning: "chiến lược", pos: "noun", example: "We need a new marketing strategy.", exampleVi: "Chúng ta cần một chiến lược marketing mới.", difficulty: 5, level: "B2", topic: "business" },
+  { word: "supplier", ipa: "/səˈplaɪə/", meaning: "nhà cung cấp", pos: "noun", example: "Our supplier raised prices again.", exampleVi: "Nhà cung cấp của chúng tôi lại tăng giá.", difficulty: 4, level: "B2", topic: "business" },
+  { word: "quarterly", ipa: "/ˈkwɔːtəli/", meaning: "hàng quý", pos: "adjective", example: "We hold quarterly review meetings.", exampleVi: "Chúng tôi tổ chức họp đánh giá hàng quý.", difficulty: 5, level: "B2", topic: "business" },
+  { word: "negotiation", ipa: "/nɪˌɡəʊʃiˈeɪʃn/", meaning: "cuộc đàm phán", pos: "noun", example: "The negotiation took three days.", exampleVi: "Cuộc đàm phán đã kéo dài ba ngày.", difficulty: 5, level: "B2", topic: "business" },
+
+  // ---------- Công nghệ ----------
+  { word: "algorithm", ipa: "/ˈælɡərɪðəm/", meaning: "thuật toán", pos: "noun", example: "The algorithm suggests new vocabulary.", exampleVi: "Thuật toán gợi ý những từ mới.", difficulty: 5, level: "C1", topic: "cong-nghe" },
+  { word: "device", ipa: "/dɪˈvaɪs/", meaning: "thiết bị", pos: "noun", example: "This device runs out of battery quickly.", exampleVi: "Thiết bị này hết pin rất nhanh.", difficulty: 3, level: "B1", topic: "cong-nghe" },
+  { word: "download", ipa: "/ˌdaʊnˈləʊd/", meaning: "tải xuống", pos: "verb", example: "Download the app for free.", exampleVi: "Tải ứng dụng miễn phí.", difficulty: 2, level: "A2", topic: "cong-nghe", common: true },
+  { word: "privacy", ipa: "/ˈprɪvəsi/", meaning: "quyền riêng tư", pos: "noun", example: "Online privacy matters a lot.", exampleVi: "Quyền riêng tư trên mạng rất quan trọng.", difficulty: 4, level: "B2", topic: "cong-nghe" },
+  { word: "cybersecurity", ipa: "/ˌsaɪbəsɪˈkjʊərəti/", meaning: "an ninh mạng", pos: "noun", example: "Cybersecurity is a fast-growing field.", exampleVi: "An ninh mạng là một lĩnh vực phát triển nhanh.", difficulty: 5, level: "C1", topic: "cong-nghe" },
+  { word: "automate", ipa: "/ˈɔːtəmeɪt/", meaning: "tự động hóa", pos: "verb", example: "We automate repetitive tasks.", exampleVi: "Chúng tôi tự động hóa các tác vụ lặp lại.", difficulty: 5, level: "B2", topic: "cong-nghe" },
+  { word: "innovation", ipa: "/ˌɪnəˈveɪʃn/", meaning: "đổi mới, sáng tạo", pos: "noun", example: "Innovation drives long-term growth.", exampleVi: "Đổi mới sáng tạo thúc đẩy tăng trưởng dài hạn.", difficulty: 5, level: "B2", topic: "cong-nghe" },
+  { word: "software", ipa: "/ˈsɒftweə/", meaning: "phần mềm", pos: "noun", example: "The software needs an update.", exampleVi: "Phần mềm cần được cập nhật.", difficulty: 2, level: "A2", topic: "cong-nghe", common: true },
+  { word: "network", ipa: "/ˈnetwɜːk/", meaning: "mạng, mạng lưới", pos: "noun", example: "The network is very slow today.", exampleVi: "Mạng hôm nay rất chậm.", difficulty: 3, level: "A2", topic: "cong-nghe", common: true },
+  { word: "bug", ipa: "/bʌɡ/", meaning: "lỗi phần mềm", pos: "noun", example: "We fixed the bug yesterday.", exampleVi: "Chúng tôi đã sửa lỗi hôm qua.", difficulty: 3, level: "B1", topic: "cong-nghe" },
+  { word: "smartphone", ipa: "/ˈsmɑːtfəʊn/", meaning: "điện thoại thông minh", pos: "noun", example: "She bought a new smartphone.", exampleVi: "Cô ấy đã mua một chiếc điện thoại mới.", difficulty: 1, level: "A1", topic: "cong-nghe", common: true },
+
+  // ---------- Giáo dục ----------
+  { word: "assignment", ipa: "/əˈsaɪnmənt/", meaning: "bài tập, bài được giao", pos: "noun", example: "The assignment is due tomorrow.", exampleVi: "Bài tập phải nộp vào ngày mai.", difficulty: 3, level: "A2", topic: "giao-duc" },
+  { word: "scholarship", ipa: "/ˈskɒləʃɪp/", meaning: "học bổng", pos: "noun", example: "She won a full scholarship.", exampleVi: "Cô ấy giành được học bổng toàn phần.", difficulty: 4, level: "B1", topic: "giao-duc" },
+  { word: "curriculum", ipa: "/kəˈrɪkjələm/", meaning: "chương trình giảng dạy", pos: "noun", example: "The curriculum was updated this year.", exampleVi: "Chương trình giảng dạy đã được cập nhật năm nay.", difficulty: 5, level: "C1", topic: "giao-duc" },
+  { word: "lecture", ipa: "/ˈlektʃə/", meaning: "bài giảng", pos: "noun", example: "The lecture was very interesting.", exampleVi: "Bài giảng rất thú vị.", difficulty: 3, level: "B1", topic: "giao-duc" },
+  { word: "graduate", ipa: "/ˈɡrædʒueɪt/", meaning: "tốt nghiệp", pos: "verb", example: "He graduated from university last year.", exampleVi: "Anh ấy tốt nghiệp đại học năm ngoái.", difficulty: 3, level: "B1", topic: "giao-duc", common: true },
+  { word: "discipline", ipa: "/ˈdɪsəplɪn/", meaning: "kỷ luật", pos: "noun", example: "Discipline helps you learn faster.", exampleVi: "Kỷ luật giúp bạn học nhanh hơn.", difficulty: 5, level: "B2", topic: "giao-duc" },
+  { word: "tuition", ipa: "/tjuˈɪʃn/", meaning: "học phí", pos: "noun", example: "Tuition fees are rising every year.", exampleVi: "Học phí tăng mỗi năm.", difficulty: 4, level: "B2", topic: "giao-duc" },
+  { word: "semester", ipa: "/sɪˈmestə/", meaning: "học kỳ", pos: "noun", example: "Next semester starts in September.", exampleVi: "Học kỳ sau bắt đầu vào tháng Chín.", difficulty: 4, level: "B1", topic: "giao-duc" },
+  { word: "revise", ipa: "/rɪˈvaɪz/", meaning: "ôn tập", pos: "verb", example: "Revise your notes before the exam.", exampleVi: "Ôn bài trước khi thi.", difficulty: 3, level: "B1", topic: "giao-duc" },
+  { word: "knowledge", ipa: "/ˈnɒlɪdʒ/", meaning: "kiến thức", pos: "noun", example: "Knowledge is the key to success.", exampleVi: "Kiến thức là chìa khóa của thành công.", difficulty: 4, level: "B1", topic: "giao-duc", common: true },
+
+  // ---------- Đồ ăn ----------
+  { word: "delicious", ipa: "/dɪˈlɪʃəs/", meaning: "ngon, tuyệt vời", pos: "adjective", example: "The soup is absolutely delicious.", exampleVi: "Món súp thật sự ngon tuyệt.", difficulty: 2, level: "A2", topic: "do-an", common: true },
+  { word: "recipe", ipa: "/ˈresəpi/", meaning: "công thức nấu ăn", pos: "noun", example: "Follow the recipe carefully.", exampleVi: "Làm theo công thức cẩn thận.", difficulty: 3, level: "B1", topic: "do-an" },
+  { word: "ingredient", ipa: "/ɪnˈɡriːdiənt/", meaning: "nguyên liệu", pos: "noun", example: "Fresh ingredients make better food.", exampleVi: "Nguyên liệu tươi sẽ cho món ăn ngon hơn.", difficulty: 4, level: "B1", topic: "do-an" },
+  { word: "spicy", ipa: "/ˈspaɪsi/", meaning: "cay", pos: "adjective", example: "This dish is too spicy for me.", exampleVi: "Món này quá cay đối với tôi.", difficulty: 2, level: "A2", topic: "do-an", common: true },
+  { word: "snack", ipa: "/snæk/", meaning: "đồ ăn nhẹ", pos: "noun", example: "I usually eat a snack at four p.m.", exampleVi: "Tôi thường ăn đồ ăn nhẹ lúc bốn giờ chiều.", difficulty: 2, level: "A2", topic: "do-an" },
+  { word: "boil", ipa: "/bɔɪl/", meaning: "đun sôi", pos: "verb", example: "Boil the water before adding pasta.", exampleVi: "Đun sôi nước trước khi cho mì vào.", difficulty: 2, level: "A2", topic: "do-an" },
+  { word: "flavor", ipa: "/ˈfleɪvə/", meaning: "hương vị", pos: "noun", example: "The flavor of this tea is unique.", exampleVi: "Hương vị của loại trà này rất độc đáo.", difficulty: 3, level: "B1", topic: "do-an" },
+  { word: "hungry", ipa: "/ˈhʌŋɡri/", meaning: "đói", pos: "adjective", example: "I am very hungry right now.", exampleVi: "Tôi đang rất đói.", difficulty: 1, level: "A1", topic: "do-an", common: true },
+  { word: "dessert", ipa: "/dɪˈzɜːt/", meaning: "món tráng miệng", pos: "noun", example: "We ordered dessert after dinner.", exampleVi: "Chúng tôi gọi món tráng miệng sau bữa tối.", difficulty: 3, level: "A2", topic: "do-an" },
+  { word: "portion", ipa: "/ˈpɔːʃn/", meaning: "khẩu phần", pos: "noun", example: "The portions here are generous.", exampleVi: "Khẩu phần ở đây rất hào phóng.", difficulty: 4, level: "B1", topic: "do-an" },
+
+  // ---------- Shopping ----------
+  { word: "discount", ipa: "/ˈdɪskaʊnt/", meaning: "giảm giá", pos: "noun", example: "There is a twenty percent discount today.", exampleVi: "Hôm nay được giảm hai mươi phần trăm.", difficulty: 3, level: "A2", topic: "mua-sam", common: true },
+  { word: "receipt", ipa: "/rɪˈsiːt/", meaning: "biên lai, hóa đơn", pos: "noun", example: "Please keep the receipt.", exampleVi: "Vui lòng giữ biên lai.", difficulty: 4, level: "B1", topic: "mua-sam" },
+  { word: "refund", ipa: "/ˈriːfʌnd/", meaning: "hoàn tiền", pos: "noun", example: "I asked for a full refund.", exampleVi: "Tôi yêu cầu hoàn lại toàn bộ tiền.", difficulty: 4, level: "B1", topic: "mua-sam" },
+  { word: "compare", ipa: "/kəmˈpeə/", meaning: "so sánh", pos: "verb", example: "Compare the prices before you buy.", exampleVi: "So sánh giá trước khi mua.", difficulty: 2, level: "A2", topic: "mua-sam", common: true },
+  { word: "affordable", ipa: "/əˈfɔːdəbl/", meaning: "phải chăng", pos: "adjective", example: "This bag is affordable and stylish.", exampleVi: "Chiếc túi này phải chăng và hợp mốt.", difficulty: 4, level: "B1", topic: "mua-sam" },
+  { word: "bargain", ipa: "/ˈbɑːɡən/", meaning: "món hời", pos: "noun", example: "This jacket was a real bargain.", exampleVi: "Chiếc áo này đúng là một món hời.", difficulty: 4, level: "B1", topic: "mua-sam" },
+  { word: "deliver", ipa: "/dɪˈlɪvə/", meaning: "giao hàng", pos: "verb", example: "They deliver within two hours.", exampleVi: "Họ giao hàng trong vòng hai tiếng.", difficulty: 3, level: "A2", topic: "mua-sam", common: true },
+  { word: "brand", ipa: "/brænd/", meaning: "thương hiệu", pos: "noun", example: "I prefer this brand of coffee.", exampleVi: "Tôi thích thương hiệu cà phê này hơn.", difficulty: 3, level: "A2", topic: "mua-sam" },
+  { word: "return", ipa: "/rɪˈtɜːn/", meaning: "trả lại (hàng)", pos: "verb", example: "I returned the shoes yesterday.", exampleVi: "Tôi đã trả lại đôi giày hôm qua.", difficulty: 2, level: "A2", topic: "mua-sam", common: true },
+  { word: "display", ipa: "/dɪˈspleɪ/", meaning: "trưng bày, hiển thị", pos: "verb", example: "Shops display new items in the window.", exampleVi: "Các cửa hàng trưng bày món mới trong tủ kính.", difficulty: 3, level: "B1", topic: "mua-sam" },
+
+  // ---------- Công việc ----------
+  { word: "colleague", ipa: "/ˈkɒliːɡ/", meaning: "đồng nghiệp", pos: "noun", example: "My colleague helped me finish the report.", exampleVi: "Đồng nghiệp của tôi đã giúp tôi hoàn thành báo cáo.", difficulty: 4, level: "B1", topic: "cong-viec" },
+  { word: "salary", ipa: "/ˈsæləri/", meaning: "lương", pos: "noun", example: "The salary is competitive.", exampleVi: "Mức lương khá cạnh tranh.", difficulty: 3, level: "A2", topic: "cong-viec", common: true },
+  { word: "interview", ipa: "/ˈɪntəvjuː/", meaning: "buổi phỏng vấn", pos: "noun", example: "I have a job interview tomorrow.", exampleVi: "Tôi có buổi phỏng vấn việc làm ngày mai.", difficulty: 3, level: "B1", topic: "cong-viec", common: true },
+  { word: "promotion", ipa: "/prəˈməʊʃn/", meaning: "thăng chức", pos: "noun", example: "She got a promotion last month.", exampleVi: "Cô ấy được thăng chức tháng trước.", difficulty: 4, level: "B1", topic: "cong-viec" },
+  { word: "overtime", ipa: "/ˈəʊvətaɪm/", meaning: "làm thêm giờ", pos: "adverb", example: "He worked overtime to finish the project.", exampleVi: "Anh ấy làm thêm giờ để hoàn thành dự án.", difficulty: 4, level: "B1", topic: "cong-viec" },
+  { word: "quit", ipa: "/kwɪt/", meaning: "nghỉ (việc), bỏ", pos: "verb", example: "He quit his job after five years.", exampleVi: "Anh ấy nghỉ việc sau năm năm.", difficulty: 3, level: "B1", topic: "cong-viec" },
+  { word: "task", ipa: "/tɑːsk/", meaning: "nhiệm vụ", pos: "noun", example: "Finish the task before five o'clock.", exampleVi: "Hoàn thành nhiệm vụ trước năm giờ.", difficulty: 2, level: "A2", topic: "cong-viec" },
+  { word: "teamwork", ipa: "/ˈtiːmwɜːk/", meaning: "làm việc nhóm", pos: "noun", example: "Good teamwork saves a lot of time.", exampleVi: "Làm việc nhóm tốt sẽ tiết kiệm rất nhiều thời gian.", difficulty: 3, level: "B1", topic: "cong-viec" },
+  { word: "experience", ipa: "/ɪkˈspɪəriəns/", meaning: "kinh nghiệm", pos: "noun", example: "She has five years of experience.", exampleVi: "Cô ấy có năm năm kinh nghiệm.", difficulty: 4, level: "B1", topic: "cong-viec", common: true },
+  { word: "achievement", ipa: "/əˈtʃiːvmənt/", meaning: "thành tựu", pos: "noun", example: "Graduating was a great achievement.", exampleVi: "Việc tốt nghiệp là một thành tựu lớn.", difficulty: 4, level: "B1", topic: "cong-viec" },
+
+  // ---------- IELTS ----------
+  { word: "argument", ipa: "/ˈɑːɡjumənt/", meaning: "lập luận", pos: "noun", example: "Give a clear argument with evidence.", exampleVi: "Đưa ra lập luận rõ ràng kèm bằng chứng.", difficulty: 5, level: "B2", topic: "ielts" },
+  { word: "evidence", ipa: "/ˈevɪdəns/", meaning: "bằng chứng", pos: "noun", example: "There is strong evidence for this claim.", exampleVi: "Có bằng chứng vững chắc cho lập luận này.", difficulty: 5, level: "B2", topic: "ielts" },
+  { word: "analyze", ipa: "/ˈænəlaɪz/", meaning: "phân tích", pos: "verb", example: "Analyze the graph before writing.", exampleVi: "Phân tích biểu đồ trước khi viết.", difficulty: 5, level: "B2", topic: "ielts" },
+  { word: "conclusion", ipa: "/kənˈkluːʒn/", meaning: "kết luận", pos: "noun", example: "Write a strong conclusion for your essay.", exampleVi: "Viết một kết luận thuyết phục cho bài luận.", difficulty: 5, level: "B2", topic: "ielts" },
+  { word: "coherent", ipa: "/kəʊˈhɪərənt/", meaning: "mạch lạc", pos: "adjective", example: "Keep your essay coherent and logical.", exampleVi: "Giữ bài luận mạch lạc và có logic.", difficulty: 5, level: "C1", topic: "ielts" },
+  { word: "summarize", ipa: "/ˈsʌməraɪz/", meaning: "tóm tắt", pos: "verb", example: "Summarize the main idea of the article.", exampleVi: "Tóm tắt ý chính của bài viết.", difficulty: 4, level: "B2", topic: "ielts" },
+  { word: "paraphrase", ipa: "/ˈpærəfreɪz/", meaning: "diễn đạt lại", pos: "verb", example: "Paraphrase the question in your own words.", exampleVi: "Diễn đạt lại câu hỏi bằng lời của bạn.", difficulty: 5, level: "C1", topic: "ielts" },
+  { word: "reference", ipa: "/ˈrefrəns/", meaning: "tài liệu tham khảo", pos: "noun", example: "Add references to support your essay.", exampleVi: "Thêm tài liệu tham khảo để củng cố bài luận.", difficulty: 4, level: "B2", topic: "ielts" },
+  { word: "criterion", ipa: "/kraɪˈtɪəriən/", meaning: "tiêu chí", pos: "noun", example: "Check the assessment criteria carefully.", exampleVi: "Kiểm tra kỹ các tiêu chí đánh giá.", difficulty: 5, level: "C1", topic: "ielts" },
+  { word: "band", ipa: "/bænd/", meaning: "điểm band (IELTS)", pos: "noun", example: "I need band seven in IELTS.", exampleVi: "Tôi cần đạt band 7 trong IELTS.", difficulty: 4, level: "B2", topic: "ielts" },
+
+  // ---------- TOEIC ----------
+  { word: "shipment", ipa: "/ˈʃɪpmənt/", meaning: "lô hàng", pos: "noun", example: "The shipment arrives on Monday.", exampleVi: "Lô hàng sẽ đến vào thứ Hai.", difficulty: 4, level: "B1", topic: "toeic" },
+  { word: "invoice", ipa: "/ˈɪnvɔɪs/", meaning: "hóa đơn thanh toán", pos: "noun", example: "Please send the invoice by email.", exampleVi: "Vui lòng gửi hóa đơn qua email.", difficulty: 5, level: "B2", topic: "toeic" },
+  { word: "schedule", ipa: "/ˈʃedjuːl/", meaning: "lịch trình", pos: "noun", example: "Check the meeting schedule.", exampleVi: "Kiểm tra lịch trình cuộc họp.", difficulty: 3, level: "A2", topic: "toeic", common: true },
+  { word: "attend", ipa: "/əˈtend/", meaning: "tham dự", pos: "verb", example: "All staff must attend the meeting.", exampleVi: "Tất cả nhân viên phải tham dự cuộc họp.", difficulty: 3, level: "B1", topic: "toeic" },
+  { word: "propose", ipa: "/prəˈpəʊz/", meaning: "đề xuất", pos: "verb", example: "I propose a new working plan.", exampleVi: "Tôi đề xuất một kế hoạch làm việc mới.", difficulty: 4, level: "B2", topic: "toeic" },
+  { word: "clarify", ipa: "/ˈklærəfaɪ/", meaning: "làm rõ", pos: "verb", example: "Please clarify the terms of the contract.", exampleVi: "Xin làm rõ các điều khoản của hợp đồng.", difficulty: 5, level: "B2", topic: "toeic" },
+  { word: "attach", ipa: "/əˈtætʃ/", meaning: "đính kèm", pos: "verb", example: "I attached the file to the email.", exampleVi: "Tôi đã đính kèm tệp vào email.", difficulty: 3, level: "B1", topic: "toeic" },
+  { word: "notify", ipa: "/ˈnəʊtɪfaɪ/", meaning: "thông báo", pos: "verb", example: "We will notify you as soon as possible.", exampleVi: "Chúng tôi sẽ thông báo cho bạn sớm nhất có thể.", difficulty: 4, level: "B2", topic: "toeic" },
+  { word: "reputation", ipa: "/ˌrepjuˈteɪʃn/", meaning: "danh tiếng", pos: "noun", example: "The company has an excellent reputation.", exampleVi: "Công ty có danh tiếng xuất sắc.", difficulty: 5, level: "B2", topic: "toeic" },
+  { word: "procedure", ipa: "/prəˈsiːdʒə/", meaning: "quy trình", pos: "noun", example: "Follow the safety procedure.", exampleVi: "Làm theo quy trình an toàn.", difficulty: 5, level: "B2", topic: "toeic" },
+];

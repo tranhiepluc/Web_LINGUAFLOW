@@ -1,0 +1,128 @@
+import type { SeedWord } from "./types";
+
+// 100+ từ tiếng Trung - 10 chủ đề
+export const chineseWords: SeedWord[] = [
+  // ---------- HSK 1 (12) ----------
+  { word: "学习", pinyin: "xuéxí", meaning: "học, học tập", pos: "verb", example: "我每天学习中文。", exampleVi: "Tôi học tiếng Trung mỗi ngày.", difficulty: 1, level: "HSK 1", analysis: "学 = học, 习 = luyện tập → học tập", topic: "hsk-1", common: true },
+  { word: "老师", pinyin: "lǎoshī", meaning: "thầy cô, giáo viên", pos: "noun", example: "他是我的中文老师。", exampleVi: "Ông ấy là giáo viên tiếng Trung của tôi.", difficulty: 1, level: "HSK 1", analysis: "老 = già, 师 = thầy → thầy giáo", topic: "hsk-1", common: true },
+  { word: "朋友", pinyin: "péngyou", meaning: "bạn bè", pos: "noun", example: "她是我的好朋友。", exampleVi: "Cô ấy là bạn tốt của tôi.", difficulty: 1, level: "HSK 1", analysis: "朋 + 友 đều có nghĩa là bạn", topic: "hsk-1", common: true },
+  { word: "工作", pinyin: "gōngzuò", meaning: "công việc, làm việc", pos: "verb / noun", example: "我在一家公司工作。", exampleVi: "Tôi làm việc ở một công ty.", difficulty: 1, level: "HSK 1", analysis: "工 = công (việc), 作 = làm → làm việc", topic: "hsk-1", common: true },
+  { word: "医院", pinyin: "yīyuàn", meaning: "bệnh viện", pos: "noun", example: "他去医院看病。", exampleVi: "Anh ấy đến bệnh viện khám bệnh.", difficulty: 1, level: "HSK 1", analysis: "医 = y bác sĩ, 院 = sân trong → cơ sở y tế", topic: "hsk-1" },
+  { word: "电脑", pinyin: "diànnǎo", meaning: "máy tính", pos: "noun", example: "我用电脑学英语。", exampleVi: "Tôi dùng máy tính để học tiếng Anh.", difficulty: 1, level: "HSK 1", analysis: "电 = điện, 脑 = não → 'não điện' = máy tính", topic: "hsk-1", common: true },
+  { word: "钱", pinyin: "qián", meaning: "tiền", pos: "noun", example: "这个多少钱？", exampleVi: "Cái này bao nhiêu tiền?", difficulty: 1, level: "HSK 1", common: true, topic: "hsk-1" },
+  { word: "时间", pinyin: "shíjiān", meaning: "thời gian", pos: "noun", example: "我没有时间休息。", exampleVi: "Tôi không có thời gian nghỉ ngơi.", difficulty: 1, level: "HSK 1", analysis: "时 = thời, 间 = khoảng → thời gian", topic: "hsk-1", common: true },
+  { word: "旅游", pinyin: "lǚyóu", meaning: "du lịch", pos: "verb", example: "我们明天去旅游。", exampleVi: "Chúng tôi đi du lịch vào ngày mai.", difficulty: 1, level: "HSK 1", analysis: "旅 = du hành, 游 = vui chơi → du lịch", topic: "hsk-1" },
+  { word: "认识", pinyin: "rènshi", meaning: "quen biết, nhận ra", pos: "verb", example: "很高兴认识你。", exampleVi: "Rất vui được gặp bạn.", difficulty: 1, level: "HSK 1", analysis: "认 = nhận biết, 识 = hiểu biết", topic: "hsk-1", common: true },
+  { word: "便宜", pinyin: "piányi", meaning: "rẻ", pos: "adjective", example: "这个很便宜。", exampleVi: "Cái này rất rẻ.", difficulty: 1, level: "HSK 1", analysis: "便 = tiện, 宜 = hợp lý → vừa rẻ vừa tiện", topic: "hsk-1" },
+  { word: "大家", pinyin: "dàjiā", meaning: "mọi người", pos: "pronoun", example: "大家好！", exampleVi: "Chào mọi người!", difficulty: 1, level: "HSK 1", analysis: "大 = lớn, 家 = nhà → cả nhà → mọi người", topic: "hsk-1", common: true },
+
+  // ---------- HSK 2 (10) ----------
+  { word: "准备", pinyin: "zhǔnbèi", meaning: "chuẩn bị", pos: "verb", example: "我在准备明天的考试。", exampleVi: "Tôi đang chuẩn bị cho kỳ thi ngày mai.", difficulty: 2, level: "HSK 2", analysis: "准 = chuẩn xác, 备 = sẵn sàng", topic: "hsk-2" },
+  { word: "影响", pinyin: "yǐngxiǎng", meaning: "ảnh hưởng", pos: "verb / noun", example: "天气影响了我们的计划。", exampleVi: "Thời tiết ảnh hưởng đến kế hoạch của chúng tôi.", difficulty: 2, level: "HSK 2", analysis: "影 = bóng, 响 = âm thanh → tác động", topic: "hsk-2" },
+  { word: "方便", pinyin: "fāngbiàn", meaning: "tiện lợi", pos: "adjective", example: "这里买东西很方便。", exampleVi: "Mua đồ ở đây rất tiện lợi.", difficulty: 2, level: "HSK 2", analysis: "方 = phương hướng, 便 = tiện → thuận tiện", topic: "hsk-2", common: true },
+  { word: "检查", pinyin: "jiǎnchá", meaning: "kiểm tra", pos: "verb", example: "请检查你的作业。", exampleVi: "Hãy kiểm tra bài tập của bạn.", difficulty: 2, level: "HSK 2", analysis: "检 = kiểm nghiệm, 查 = tra xét", topic: "hsk-2" },
+  { word: "重要", pinyin: "zhòngyào", meaning: "quan trọng", pos: "adjective", example: "这件事很重要。", exampleVi: "Việc này rất quan trọng.", difficulty: 2, level: "HSK 2", analysis: "重 = nặng, 要 = cần → quan trọng", topic: "hsk-2", common: true },
+  { word: "办法", pinyin: "bànfǎ", meaning: "cách thức, biện pháp", pos: "noun", example: "我想到了一个好办法。", exampleVi: "Tôi đã nghĩ ra một cách hay.", difficulty: 2, level: "HSK 2", analysis: "办 = lo liệu, 法 = pháp (cách)", topic: "hsk-2" },
+  { word: "练习", pinyin: "liànxí", meaning: "luyện tập", pos: "verb / noun", example: "每天练习汉语很重要。", exampleVi: "Luyện tiếng Trung mỗi ngày rất quan trọng.", difficulty: 2, level: "HSK 2", analysis: "练 = rèn luyện, 习 = ôn tập", topic: "hsk-2" },
+  { word: "提高", pinyin: "tígāo", meaning: "nâng cao", pos: "verb", example: "我想提高听力水平。", exampleVi: "Tôi muốn nâng cao kỹ năng nghe.", difficulty: 2, level: "HSK 2", analysis: "提 = nhấc lên, 高 = cao → nâng cao", topic: "hsk-2" },
+  { word: "通知", pinyin: "tōngzhī", meaning: "thông báo", pos: "verb / noun", example: "老师通知我们明天考试。", exampleVi: "Giáo viên thông báo chúng tôi sẽ thi ngày mai.", difficulty: 2, level: "HSK 2", analysis: "通 = thông suốt, 知 = biết → báo cho biết", topic: "hsk-2" },
+  { word: "决定", pinyin: "juédìng", meaning: "quyết định", pos: "verb / noun", example: "我决定去中国留学。", exampleVi: "Tôi quyết định đi Trung Quốc du học.", difficulty: 2, level: "HSK 2", analysis: "决 = quyết đoán, 定 = định (chắc chắn)", topic: "hsk-2" },
+
+  // ---------- HSK 3 (10) ----------
+  { word: "发展", pinyin: "fāzhǎn", meaning: "phát triển", pos: "verb / noun", example: "这个国家发展得很快。", exampleVi: "Quốc gia này phát triển rất nhanh.", difficulty: 3, level: "HSK 3", analysis: "发 = bung ra, 展 = triển khai", topic: "hsk-3" },
+  { word: "文化", pinyin: "wénhuà", meaning: "văn hóa", pos: "noun", example: "中国文化很有意思。", exampleVi: "Văn hóa Trung Quốc rất thú vị.", difficulty: 3, level: "HSK 3", analysis: "文 = văn tự, 化 = biến hóa → văn hóa", topic: "hsk-3" },
+  { word: "经验", pinyin: "jīngyàn", meaning: "kinh nghiệm", pos: "noun", example: "他有很多工作经验。", exampleVi: "Anh ấy có rất nhiều kinh nghiệm làm việc.", difficulty: 3, level: "HSK 3", analysis: "经 = trải qua, 验 = kiểm nghiệm", topic: "hsk-3" },
+  { word: "环境", pinyin: "huánjìng", meaning: "môi trường, hoàn cảnh", pos: "noun", example: "保护环境很重要。", exampleVi: "Bảo vệ môi trường rất quan trọng.", difficulty: 3, level: "HSK 3", analysis: "环 = vành, 境 = cảnh giới → hoàn cảnh", topic: "hsk-3" },
+  { word: "交流", pinyin: "jiāoliú", meaning: "giao lưu, trao đổi", pos: "verb", example: "我们用汉语交流。", exampleVi: "Chúng tôi giao tiếp bằng tiếng Trung.", difficulty: 3, level: "HSK 3", analysis: "交 = giao thoa, 流 = chảy → luân lưu, trao đổi", topic: "hsk-3" },
+  { word: "选择", pinyin: "xuǎnzé", meaning: "chọn lựa", pos: "verb / noun", example: "你可以自己选择。", exampleVi: "Bạn có thể tự mình chọn lựa.", difficulty: 3, level: "HSK 3", analysis: "选 = tuyển chọn, 择 = lựa chọn", topic: "hsk-3" },
+  { word: "必须", pinyin: "bìxū", meaning: "phải, bắt buộc", pos: "adverb", example: "你必须完成作业。", exampleVi: "Bạn phải hoàn thành bài tập.", difficulty: 3, level: "HSK 3", analysis: "必 = tất nhiên, 须 = cần phải", topic: "hsk-3" },
+  { word: "安全", pinyin: "ānquán", meaning: "an toàn", pos: "adjective / noun", example: "请注意安全。", exampleVi: "Xin chú ý an toàn.", difficulty: 3, level: "HSK 3", analysis: "安 = yên ổn, 全 = trọn vẹn → an toàn", topic: "hsk-3", common: true },
+  { word: "习惯", pinyin: "xíguàn", meaning: "thói quen, quen", pos: "noun / verb", example: "我习惯早睡早起。", exampleVi: "Tôi quen đi ngủ sớm và dậy sớm.", difficulty: 3, level: "HSK 3", analysis: "习 = thói quen, 惯 = quen thuộc", topic: "hsk-3" },
+  { word: "关系", pinyin: "guānxi", meaning: "quan hệ, liên quan", pos: "noun", example: "我们的关系很好。", exampleVi: "Mối quan hệ của chúng tôi rất tốt.", difficulty: 3, level: "HSK 3", analysis: "关 = cửa ải, 系 = gắn kết → mối liên hệ", topic: "hsk-3" },
+
+  // ---------- HSK 4 (10) ----------
+  { word: "谈判", pinyin: "tánpàn", meaning: "đàm phán", pos: "verb", example: "他们在谈判价格。", exampleVi: "Họ đang đàm phán về giá cả.", difficulty: 4, level: "HSK 4", analysis: "谈 = nói chuyện, 判 = phán (xét) → đàm phán", topic: "hsk-4" },
+  { word: "放弃", pinyin: "fàngqì", meaning: "từ bỏ", pos: "verb", example: "他放弃了这个计划。", exampleVi: "Anh ấy đã từ bỏ kế hoạch này.", difficulty: 4, level: "HSK 4", analysis: "放 = buông, 弃 = vứt → buông tay, từ bỏ", topic: "hsk-4" },
+  { word: "承担", pinyin: "chéngdān", meaning: "gánh vác, chịu trách nhiệm", pos: "verb", example: "公司应该承担责任。", exampleVi: "Công ty nên chịu trách nhiệm.", difficulty: 4, level: "HSK 4", analysis: "承 = đỡ lấy, 担 = gánh → gánh vác", topic: "hsk-4" },
+  { word: "保持", pinyin: "bǎochí", meaning: "giữ gìn, duy trì", pos: "verb", example: "我们保持联系。", exampleVi: "Chúng ta giữ liên lạc nhé.", difficulty: 4, level: "HSK 4", analysis: "保 = bảo vệ, 持 = giữ → duy trì", topic: "hsk-4" },
+  { word: "改善", pinyin: "gǎishàn", meaning: "cải thiện", pos: "verb", example: "改善生活质量。", exampleVi: "Cải thiện chất lượng cuộc sống.", difficulty: 4, level: "HSK 4", analysis: "改 = sửa đổi, 善 = tốt đẹp → làm cho tốt hơn", topic: "hsk-4" },
+  { word: "鼓励", pinyin: "gǔlì", meaning: "khuyến khích, động viên", pos: "verb", example: "老师鼓励我们大胆发言。", exampleVi: "Giáo viên khuyến khích chúng tôi mạnh dạn phát biểu.", difficulty: 4, level: "HSK 4", analysis: "鼓 = đánh trống, 力 = sức → thúc đẩy", topic: "hsk-4" },
+  { word: "资源", pinyin: "zīyuán", meaning: "tài nguyên", pos: "noun", example: "我们应该节约资源。", exampleVi: "Chúng ta nên tiết kiệm tài nguyên.", difficulty: 4, level: "HSK 4", analysis: "资 = vốn liếng, 源 = nguồn → nguồn lực", topic: "hsk-4" },
+  { word: "竞争", pinyin: "jìngzhēng", meaning: "cạnh tranh", pos: "verb / noun", example: "市场竞争非常激烈。", exampleVi: "Cạnh tranh trên thị trường rất gay gắt.", difficulty: 4, level: "HSK 4", analysis: "竞 = tranh đua, 争 = tranh chấp", topic: "hsk-4" },
+  { word: "负责", pinyin: "fùzé", meaning: "phụ trách", pos: "verb", example: "我负责这个项目。", exampleVi: "Tôi phụ trách dự án này.", difficulty: 4, level: "HSK 4", analysis: "负 = gánh chịu, 责 = trách nhiệm", topic: "hsk-4" },
+  { word: "效率", pinyin: "xiàolǜ", meaning: "hiệu suất", pos: "noun", example: "提高工作效率很重要。", exampleVi: "Nâng cao hiệu suất làm việc rất quan trọng.", difficulty: 4, level: "HSK 4", analysis: "效 = hiệu quả, 率 = tỷ lệ → hiệu suất", topic: "hsk-4" },
+
+  // ---------- HSK 5 (10) ----------
+  { word: "潜力", pinyin: "qiánlì", meaning: "tiềm năng", pos: "noun", example: "这个市场有很大潜力。", exampleVi: "Thị trường này có tiềm năng rất lớn.", difficulty: 5, level: "HSK 5", analysis: "潜 = ẩn dưới, 力 = sức → sức ẩn", topic: "hsk-5" },
+  { word: "战略", pinyin: "zhànlüè", meaning: "chiến lược", pos: "noun", example: "公司制定了新的战略。", exampleVi: "Công ty đã đề ra chiến lược mới.", difficulty: 5, level: "HSK 5", analysis: "战 = chiến tranh, 略 = mưu lược", topic: "hsk-5" },
+  { word: "制定", pinyin: "zhìdìng", meaning: "xây dựng, lập ra", pos: "verb", example: "我们要制定一个计划。", exampleVi: "Chúng ta cần lập một kế hoạch.", difficulty: 5, level: "HSK 5", analysis: "制 = chế định, 定 = định ra", topic: "hsk-5" },
+  { word: "逐步", pinyin: "zhúbù", meaning: "từng bước", pos: "adverb", example: "逐步提高自己的水平。", exampleVi: "Từng bước nâng cao trình độ của mình.", difficulty: 5, level: "HSK 5", analysis: "逐 = lần lượt, 步 = bước chân", topic: "hsk-5" },
+  { word: "避免", pinyin: "bìmiǎn", meaning: "tránh", pos: "verb", example: "避免犯同样的错误。", exampleVi: "Tránh mắc phải lỗi giống nhau.", difficulty: 5, level: "HSK 5", analysis: "避 = tránh né, 免 = miễn cho → tránh", topic: "hsk-5" },
+  { word: "基础", pinyin: "jīchǔ", meaning: "nền tảng", pos: "noun", example: "打好汉语基础。", exampleVi: "Đặt nền tảng tiếng Trung thật tốt.", difficulty: 5, level: "HSK 5", analysis: "基 = móng nhà, 础 = chân cột → nền móng", topic: "hsk-5" },
+  { word: "掌握", pinyin: "zhǎngwò", meaning: "nắm vững, thành thạo", pos: "verb", example: "掌握两千个汉字很重要。", exampleVi: "Nắm vững hai nghìn chữ Hán rất quan trọng.", difficulty: 5, level: "HSK 5", analysis: "掌 = bàn tay, 握 = nắm → nắm trong tay", topic: "hsk-5" },
+  { word: "灵活", pinyin: "línghuó", meaning: "linh hoạt", pos: "adjective", example: "灵活运用语法规则。", exampleVi: "Sử dụng linh hoạt các quy tắc ngữ pháp.", difficulty: 5, level: "HSK 5", analysis: "灵 = linh mẫn, 活 = sống → nhanh nhẹn", topic: "hsk-5" },
+  { word: "现实", pinyin: "xiànshí", meaning: "thực tại, hiện thực", pos: "noun / adjective", example: "我们要面对现实。", exampleVi: "Chúng ta phải đối mặt với thực tại.", difficulty: 5, level: "HSK 5", analysis: "现 = hiện tại, 实 = thật → thực tại", topic: "hsk-5" },
+  { word: "难得", pinyin: "nándé", meaning: "hiếm có, khó mà", pos: "adjective", example: "这次机会很难得。", exampleVi: "Cơ hội này thật hiếm có.", difficulty: 5, level: "HSK 5", analysis: "难 = khó, 得 = được → khó được → hiếm có", topic: "hsk-5" },
+
+  // ---------- HSK 6 (10) ----------
+  { word: "深入", pinyin: "shēnrù", meaning: "đi sâu, thâm nhập", pos: "verb / adjective", example: "深入分析这个问题。", exampleVi: "Phân tích sâu vấn đề này.", difficulty: 5, level: "HSK 6", analysis: "深 = sâu, 入 = vào → đi vào sâu", topic: "hsk-6" },
+  { word: "严谨", pinyin: "yánjǐn", meaning: "nghiêm cẩn", pos: "adjective", example: "他做学问很严谨。", exampleVi: "Ông ấy làm học vấn rất nghiêm cẩn.", difficulty: 5, level: "HSK 6", analysis: "严 = nghiêm khắc, 谨 = thận trọng", topic: "hsk-6" },
+  { word: "贯彻", pinyin: "guànchè", meaning: "quán triệt", pos: "verb", example: "把政策贯彻到底。", exampleVi: "Quán triệt chính sách đến cùng.", difficulty: 5, level: "HSK 6", analysis: "贯 = xâu chuỗi, 彻 = thấu suốt", topic: "hsk-6" },
+  { word: "崛起", pinyin: "juéqǐ", meaning: "trỗi dậy", pos: "verb", example: "中国经济迅速崛起。", exampleVi: "Kinh tế Trung Quốc trỗi dậy nhanh chóng.", difficulty: 5, level: "HSK 6", analysis: "崛 = nhô lên đột ngột, 起 = đứng dậy", topic: "hsk-6" },
+  { word: "精髓", pinyin: "jīngsuǐ", meaning: "tinh hoa, cốt lõi", pos: "noun", example: "掌握文化的精髓。", exampleVi: "Nắm bắt tinh hoa của văn hóa.", difficulty: 5, level: "HSK 6", analysis: "精 = tinh chất, 髓 = tuỷ → phần tinh túy nhất", topic: "hsk-6" },
+  { word: "逆转", pinyin: "nìzhuǎn", meaning: "đảo chiều, xoay chuyển", pos: "verb", example: "局势突然逆转。", exampleVi: "Tình thế bỗng nhiên đảo chiều.", difficulty: 5, level: "HSK 6", analysis: "逆 = ngược, 转 = quay → quay ngược lại", topic: "hsk-6" },
+  { word: "磋商", pinyin: "cuōshāng", meaning: "thương lượng", pos: "verb", example: "双方正在磋商合作事宜。", exampleVi: "Hai bên đang thương lượng việc hợp tác.", difficulty: 5, level: "HSK 6", analysis: "磋 = mài dũa, 商 = thương luận → bàn bạc kỹ", topic: "hsk-6" },
+  { word: "楷模", pinyin: "kǎimó", meaning: "hình mẫu", pos: "noun", example: "他是年轻人的楷模。", exampleVi: "Ông ấy là hình mẫu của người trẻ.", difficulty: 5, level: "HSK 6", analysis: "楷 = chữ mẫu, 模 = khuôn → người mẫu mực", topic: "hsk-6" },
+  { word: "瑕疵", pinyin: "xiácī", meaning: "tì vết, khuyết điểm", pos: "noun", example: "这篇文章没有瑕疵。", exampleVi: "Bài viết này không có tì vết.", difficulty: 5, level: "HSK 6", analysis: "瑕 = vết mực trắng, 疵 = lỗi nhỏ → khuyết điểm", topic: "hsk-6" },
+  { word: "缔结", pinyin: "dìjié", meaning: "thiết lập (quan hệ)", pos: "verb", example: "两国缔结了友好关系。", exampleVi: "Hai nước thiết lập quan hệ hữu nghị.", difficulty: 5, level: "HSK 6", analysis: "缔 = kết giao, 结 = thắt nút → gắn kết", topic: "hsk-6" },
+
+  // ---------- Giao tiếp (12) ----------
+  { word: "谢谢", pinyin: "xièxie", meaning: "cảm ơn", pos: "verb", example: "谢谢你的帮助！", exampleVi: "Cảm ơn sự giúp đỡ của bạn!", difficulty: 1, level: "HSK 1", analysis: "谢 = cảm tạ", topic: "giao-tiep-tq", common: true },
+  { word: "对不起", pinyin: "duìbuqǐ", meaning: "xin lỗi", pos: "verb", example: "对不起，我来晚了。", exampleVi: "Xin lỗi, tôi đến muộn.", difficulty: 1, level: "HSK 1", analysis: "对 + 不 + 起 → 'không đỡ nổi' → xin lỗi", topic: "giao-tiep-tq", common: true },
+  { word: "再见", pinyin: "zàijiàn", meaning: "tạm biệt", pos: "verb", example: "明天见，再见！", exampleVi: "Ngày mai gặp lại, tạm biệt!", difficulty: 1, level: "HSK 1", analysis: "再 = nữa, 见 = gặp → gặp lại", topic: "giao-tiep-tq", common: true },
+  { word: "请问", pinyin: "qǐngwèn", meaning: "xin hỏi", pos: "verb", example: "请问洗手间在哪儿？", exampleVi: "Xin hỏi nhà vệ sinh ở đâu?", difficulty: 1, level: "HSK 1", analysis: "请 = xin, 问 = hỏi", topic: "giao-tiep-tq", common: true },
+  { word: "希望", pinyin: "xīwàng", meaning: "hy vọng", pos: "verb / noun", example: "希望你能来。", exampleVi: "Hy vọng bạn có thể đến.", difficulty: 2, level: "HSK 2", analysis: "希 = mong mỏi, 望 = ngóng trông", topic: "giao-tiep-tq" },
+  { word: "理解", pinyin: "lǐjiě", meaning: "hiểu, thấu hiểu", pos: "verb", example: "我理解你的心情。", exampleVi: "Tôi hiểu cảm xúc của bạn.", difficulty: 2, level: "HSK 2", analysis: "理 = lý (tính lý), 解 = gỡ → gỡ ra mà hiểu", topic: "giao-tiep-tq" },
+  { word: "邀请", pinyin: "yāoqǐng", meaning: "mời", pos: "verb", example: "我邀请你来我家玩。", exampleVi: "Tôi mời bạn đến nhà tôi chơi.", difficulty: 2, level: "HSK 2", analysis: "邀 = rước, 请 = xin mời", topic: "giao-tiep-tq" },
+  { word: "告诉", pinyin: "gàosù", meaning: "nói cho biết", pos: "verb", example: "请告诉我你的名字。", exampleVi: "Xin hãy cho tôi biết tên bạn.", difficulty: 1, level: "HSK 1", analysis: "告 = báo, 诉 = kể → báo cho biết", topic: "giao-tiep-tq", common: true },
+  { word: "喜欢", pinyin: "xǐhuan", meaning: "thích", pos: "verb", example: "我喜欢学习中文。", exampleVi: "Tôi thích học tiếng Trung.", difficulty: 1, level: "HSK 1", analysis: "喜 = vui thích, 欢 = hoan hỉ", topic: "giao-tiep-tq", common: true },
+  { word: "帮助", pinyin: "bāngzhù", meaning: "giúp đỡ", pos: "verb / noun", example: "请帮助我解决这个问题。", exampleVi: "Xin hãy giúp tôi giải quyết vấn đề này.", difficulty: 2, level: "HSK 2", analysis: "帮 = giúp, 助 = trợ → giúp đỡ", topic: "giao-tiep-tq", common: true },
+  { word: "安慰", pinyin: "ānwèi", meaning: "an ủi", pos: "verb", example: "他安慰了我很久。", exampleVi: "Anh ấy đã an ủi tôi rất lâu.", difficulty: 3, level: "HSK 3", analysis: "安 = yên, 慰 = ủi → làm cho yên lòng", topic: "giao-tiep-tq" },
+  { word: "同意", pinyin: "tóngyì", meaning: "đồng ý", pos: "verb", example: "我同意你的看法。", exampleVi: "Tôi đồng ý với quan điểm của bạn.", difficulty: 2, level: "HSK 2", analysis: "同 = cùng, 意 = ý → cùng một ý", topic: "giao-tiep-tq", common: true },
+
+  // ---------- Du lịch (10) ----------
+  { word: "飞机", pinyin: "fēijī", meaning: "máy bay", pos: "noun", example: "我坐飞机去北京。", exampleVi: "Tôi đi máy bay đến Bắc Kinh.", difficulty: 1, level: "HSK 1", analysis: "飞 = bay, 机 = máy → máy bay", topic: "du-lich-tq", common: true },
+  { word: "火车", pinyin: "huǒchē", meaning: "tàu hỏa", pos: "noun", example: "火车八点开。", exampleVi: "Tàu hỏa xuất phát lúc tám giờ.", difficulty: 1, level: "HSK 1", analysis: "火 = lửa (hơi nước), 车 = xe → tàu hơi nước", topic: "du-lich-tq", common: true },
+  { word: "酒店", pinyin: "jiǔdiàn", meaning: "khách sạn", pos: "noun", example: "我们住在市中心的酒店。", exampleVi: "Chúng tôi ở khách sạn ở trung tâm thành phố.", difficulty: 1, level: "HSK 1", analysis: "酒 = rượu, 店 = quán → tiệm rượu → khách sạn", topic: "du-lich-tq" },
+  { word: "行李", pinyin: "xíngli", meaning: "hành lý", pos: "noun", example: "我的行李太多了。", exampleVi: "Hành lý của tôi quá nhiều.", difficulty: 2, level: "HSK 2", analysis: "行 = đi lại, 李 = đồ đạc → hành lý", topic: "du-lich-tq" },
+  { word: "观光", pinyin: "guāngguāng", meaning: "tham quan", pos: "verb", example: "我们明天去城里观光。", exampleVi: "Chúng tôi đi tham quan thành phố ngày mai.", difficulty: 2, level: "HSK 2", analysis: "观 = chiêm ngưỡng, 光 = ánh sáng → ngắm cảnh", topic: "du-lich-tq" },
+  { word: "签证", pinyin: "qiānzhèng", meaning: "thị thực (visa)", pos: "noun", example: "办签证需要护照。", exampleVi: "Làm visa cần hộ chiếu.", difficulty: 3, level: "HSK 3", analysis: "签 = ký, 证 = chứng nhận → dấu xác nhận", topic: "du-lich-tq" },
+  { word: "地图", pinyin: "dìtú", meaning: "bản đồ", pos: "noun", example: "我们看一下地图。", exampleVi: "Chúng ta nhìn bản đồ nhé.", difficulty: 1, level: "HSK 1", analysis: "地 = đất, 图 = hình → hình vẽ mặt đất", topic: "du-lich-tq" },
+  { word: "出发", pinyin: "chūfā", meaning: "xuất phát", pos: "verb", example: "明天早上八点出发。", exampleVi: "Xuất phát lúc tám giờ sáng mai.", difficulty: 2, level: "HSK 2", analysis: "出 = ra ngoài, 发 = đi → lên đường", topic: "du-lich-tq" },
+  { word: "住宿", pinyin: "zhùsù", meaning: "lưu trú, chỗ ở", pos: "verb / noun", example: "这里的住宿很便宜。", exampleVi: "Chỗ ở ở đây rất rẻ.", difficulty: 3, level: "HSK 3", analysis: "住 = ở lại, 宿 = trọ → nơi ăn ở", topic: "du-lich-tq" },
+  { word: "导游", pinyin: "dǎoyóu", meaning: "hướng dẫn viên", pos: "noun", example: "导游给我们讲解景点的历史。", exampleVi: "Hướng dẫn viên thuyết minh lịch sử điểm tham quan cho chúng tôi.", difficulty: 3, level: "HSK 3", analysis: "导 = dẫn đường, 游 = du ngoạn → người dẫn du lịch", topic: "du-lich-tq" },
+
+  // ---------- Công việc (10) ----------
+  { word: "开会", pinyin: "kāihuì", meaning: "họp", pos: "verb", example: "我们下午三点开会。", exampleVi: "Chúng tôi họp lúc ba giờ chiều.", difficulty: 2, level: "HSK 2", analysis: "开 = mở, 会 = cuộc họp → họp hành", topic: "cong-viec-tq", common: true },
+  { word: "加班", pinyin: "jiābān", meaning: "làm thêm giờ", pos: "verb", example: "今天要加班到很晚。", exampleVi: "Hôm nay phải làm thêm giờ đến khuya.", difficulty: 3, level: "HSK 3", analysis: "加 = thêm, 班 = ca làm → làm thêm ca", topic: "cong-viec-tq" },
+  { word: "合同", pinyin: "hétong", meaning: "hợp đồng", pos: "noun", example: "我们昨天签了合同。", exampleVi: "Chúng tôi đã ký hợp đồng hôm qua.", difficulty: 3, level: "HSK 3", analysis: "合 = hợp nhất, 同 = cùng → thỏa thuận chung", topic: "cong-viec-tq" },
+  { word: "汇报", pinyin: "huìbào", meaning: "báo cáo", pos: "verb / noun", example: "我向领导汇报工作。", exampleVi: "Tôi báo cáo công việc với lãnh đạo.", difficulty: 4, level: "HSK 4", analysis: "汇 = quy tụ, 报 = báo tin → trình bày", topic: "cong-viec-tq" },
+  { word: "升职", pinyin: "shēngzhí", meaning: "thăng chức", pos: "verb", example: "他最近升职了。", exampleVi: "Anh ấy vừa được thăng chức.", difficulty: 3, level: "HSK 3", analysis: "升 = lên, 职 = chức vụ → lên chức", topic: "cong-viec-tq" },
+  { word: "面试", pinyin: "miànshì", meaning: "phỏng vấn", pos: "noun / verb", example: "我明天有一个面试。", exampleVi: "Ngày mai tôi có một buổi phỏng vấn.", difficulty: 3, level: "HSK 3", analysis: "面 = mặt, 试 = thử → gặp mặt thử việc", topic: "cong-viec-tq" },
+  { word: "工资", pinyin: "gōngzī", meaning: "tiền lương", pos: "noun", example: "这个月的工资涨了。", exampleVi: "Lương tháng này tăng rồi.", difficulty: 3, level: "HSK 3", analysis: "工 = làm việc, 资 = tiền → tiền công", topic: "cong-viec-tq", common: true },
+  { word: "团队", pinyin: "tuánduì", meaning: "đội nhóm", pos: "noun", example: "团队合作非常重要。", exampleVi: "Hợp tác nhóm rất quan trọng.", difficulty: 3, level: "HSK 3", analysis: "团 = đoàn thể, 队 = đội", topic: "cong-viec-tq" },
+  { word: "项目", pinyin: "xiàngmù", meaning: "dự án", pos: "noun", example: "这个项目已经完成了。", exampleVi: "Dự án này đã hoàn thành.", difficulty: 3, level: "HSK 3", analysis: "项 = mục, 目 = mắt → từng mục", topic: "cong-viec-tq" },
+  { word: "目标", pinyin: "mùbiāo", meaning: "mục tiêu", pos: "noun", example: "我们的目标很明确。", exampleVi: "Mục tiêu của chúng tôi rất rõ ràng.", difficulty: 3, level: "HSK 3", analysis: "目 = mắt, 标 = tiêu (bia) → bia nhắm", topic: "cong-viec-tq", common: true },
+
+  // ---------- Đồ ăn (10) ----------
+  { word: "火锅", pinyin: "huǒguō", meaning: "lẩu", pos: "noun", example: "晚上我们吃火锅吧。", exampleVi: "Tối nay chúng ta ăn lẩu đi.", difficulty: 1, level: "HSK 1", analysis: "火 = lửa, 锅 = nồi → nồi lửa = lẩu", topic: "do-an-tq" },
+  { word: "饺子", pinyin: "jiǎozi", meaning: "bánh bao súp dumpling", pos: "noun", example: "妈妈包了饺子。", exampleVi: "Mẹ gói bánh dumpling.", difficulty: 1, level: "HSK 1", analysis: "饺 = bánh hấp, 子 = hậu tố", topic: "do-an-tq" },
+  { word: "炒饭", pinyin: "chǎofàn", meaning: "cơm rang", pos: "noun", example: "来一碗蛋炒饭。", exampleVi: "Cho một bát cơm rang trứng.", difficulty: 1, level: "HSK 1", analysis: "炒 = xào, 饭 = cơm", topic: "do-an-tq" },
+  { word: "面条", pinyin: "miàntiáo", meaning: "mì (sợi)", pos: "noun", example: "我最爱吃面条。", exampleVi: "Tôi thích ăn mì nhất.", difficulty: 1, level: "HSK 1", analysis: "面 = bột mì, 条 = sợi → sợi mì", topic: "do-an-tq" },
+  { word: "茶", pinyin: "chá", meaning: "trà", pos: "noun", example: "我们一起喝茶吧。", exampleVi: "Chúng ta cùng uống trà đi.", difficulty: 1, level: "HSK 1", common: true, topic: "do-an-tq" },
+  { word: "盐", pinyin: "yán", meaning: "muối", pos: "noun", example: "菜里放一点盐。", exampleVi: "Cho một ít muối vào món ăn.", difficulty: 1, level: "HSK 1", topic: "do-an-tq" },
+  { word: "美味", pinyin: "měiwèi", meaning: "ngon miệng", pos: "adjective", example: "这道菜很美味。", exampleVi: "Món này rất ngon miệng.", difficulty: 2, level: "HSK 2", analysis: "美 = đẹp, 味 = vị → vị ngon", topic: "do-an-tq" },
+  { word: "点菜", pinyin: "diǎncài", meaning: "gọi món", pos: "verb", example: "现在可以点菜了。", exampleVi: "Bây giờ có thể gọi món rồi.", difficulty: 2, level: "HSK 2", analysis: "点 = gọi, 菜 = món ăn", topic: "do-an-tq" },
+  { word: "饮料", pinyin: "yǐnliào", meaning: "đồ uống", pos: "noun", example: "我要一杯饮料。", exampleVi: "Tôi muốn một ly đồ uống.", difficulty: 1, level: "HSK 1", analysis: "饮 = uống, 料 = vật liệu → đồ uống", topic: "do-an-tq" },
+  { word: "饱", pinyin: "bǎo", meaning: "no", pos: "adjective", example: "我吃饱了，谢谢。", exampleVi: "Tôi ăn no rồi, cảm ơn.", difficulty: 1, level: "HSK 1", topic: "do-an-tq" },
+];
