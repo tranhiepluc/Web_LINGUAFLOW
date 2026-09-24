@@ -105,7 +105,7 @@ export default async function StatisticsPage() {
             Cấp {xp.level} · {levelTitle(xp.level)}
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 p-6">
           <div className="flex items-center justify-between text-sm">
             <span className="text-muted-foreground">Kinh nghiệm (XP)</span>
             <span className="font-medium">

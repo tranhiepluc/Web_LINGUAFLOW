@@ -141,7 +141,7 @@ export function SettingsForm({ initial }: { initial: SettingsInitial }) {
             <Palette className="size-4 text-primary" /> Giao diện & âm thanh
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 p-6">
           <label className="space-y-1.5 text-sm font-medium">
             Chủ đề
             <Select value={form.theme} onChange={(e) => themeChange(e.target.value as "light" | "dark" | "system")}>
