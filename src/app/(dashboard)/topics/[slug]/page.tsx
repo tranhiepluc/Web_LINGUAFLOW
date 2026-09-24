@@ -31,7 +31,7 @@ export default async function TopicDetailPage({ params }: TopicDetailPageProps) 
       </Link>
 
       <Card className="gradient-card">
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 p-6">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="flex items-center gap-4">
               <span className="flex size-16 items-center justify-center rounded-3xl bg-secondary text-3xl">

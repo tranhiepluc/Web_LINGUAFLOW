@@ -67,7 +67,7 @@ export default async function TopicsPage({ searchParams }: TopicsPageProps) {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {topics.map((t) => (
             <Card key={t.id} className="card-hover overflow-hidden">
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-3 p-6">
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
                     <span className="flex size-12 items-center justify-center rounded-2xl bg-secondary text-2xl">

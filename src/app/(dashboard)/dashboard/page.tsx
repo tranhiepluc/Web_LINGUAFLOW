@@ -48,7 +48,7 @@ export default async function DashboardPage() {
         <div className="space-y-6">
           {/* Mục tiêu hôm nay */}
           <Card>
-            <CardContent className="space-y-3">
+            <CardContent className="space-y-3 p-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Target className="size-5 text-primary" />
@@ -93,7 +93,7 @@ export default async function DashboardPage() {
           {/* Cần ôn hôm nay */}
           {stats.dueToday > 0 ? (
             <Card className="gradient-card relative overflow-hidden">
-              <CardContent className="flex flex-wrap items-center justify-between gap-4">
+              <CardContent className="flex flex-wrap items-center justify-between gap-4 p-6">
                 <div className="space-y-1">
                   <h3 className="flex items-center gap-2 text-lg font-bold">
                     <Flame className="size-5 text-warning" />
@@ -110,7 +110,7 @@ export default async function DashboardPage() {
             </Card>
           ) : (
             <Card className="border-success/30 bg-success/5">
-              <CardContent className="flex flex-wrap items-center justify-between gap-3">
+              <CardContent className="flex flex-wrap items-center justify-between gap-3 p-6">
                 <div className="space-y-1">
                   <h3 className="flex items-center gap-2 font-semibold text-success">
                     <Check className="size-5" /> Hết việc ôn tập hôm nay
@@ -128,7 +128,7 @@ export default async function DashboardPage() {
 
           {/* Hoạt động 7 ngày */}
           <Card>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 p-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <TrendingUp className="size-5 text-primary" />
@@ -144,7 +144,7 @@ export default async function DashboardPage() {
 
           {/* Từ vựng gần đây */}
           <Card>
-            <CardContent className="space-y-1">
+            <CardContent className="space-y-1 p-6">
               <div className="mb-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Library className="size-5 text-primary" />
@@ -202,7 +202,7 @@ export default async function DashboardPage() {
         {/* Cột phải */}
         <div className="space-y-6">
           <Card>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 p-6">
               <div className="flex items-center justify-between">
                 <h2 className="flex items-center gap-2 font-semibold">
                   <BarChart3 className="size-5 text-primary" /> Hành trình của bạn
@@ -235,7 +235,7 @@ export default async function DashboardPage() {
           </div>
 
           <Card>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 p-6">
               <h2 className="font-semibold">Mẹo học hiệu quả 💡</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Học từ mới vào buổi sáng, ôn tập vào buổi tối. Chỉ cần <b>10 phút/ngày</b>, giữ streak

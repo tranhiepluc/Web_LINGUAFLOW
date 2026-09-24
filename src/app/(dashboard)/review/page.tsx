@@ -57,7 +57,7 @@ export default async function ReviewPage({ searchParams }: ReviewPageProps) {
 
       <div className="grid gap-3 sm:grid-cols-3">
         <Card>
-          <CardContent className="flex items-center gap-3">
+          <CardContent className="flex items-center gap-3 p-6">
             <span className="flex size-11 items-center justify-center rounded-2xl bg-primary/10">
               <Brain className="size-5 text-primary" />
             </span>
@@ -68,7 +68,7 @@ export default async function ReviewPage({ searchParams }: ReviewPageProps) {
           </CardContent>
         </Card>
         <Card>
-          <CardContent className="flex items-center gap-3">
+          <CardContent className="flex items-center gap-3 p-6">
             <span className="flex size-11 items-center justify-center rounded-2xl bg-orange-500/10">
               <Flame className="size-5 text-orange-500" />
             </span>
@@ -79,7 +79,7 @@ export default async function ReviewPage({ searchParams }: ReviewPageProps) {
           </CardContent>
         </Card>
         <Card>
-          <CardContent className="flex items-center gap-3">
+          <CardContent className="flex items-center gap-3 p-6">
             <span className="flex size-11 items-center justify-center rounded-2xl bg-success/10">
               <Clock className="size-5 text-success" />
             </span>
@@ -93,7 +93,7 @@ export default async function ReviewPage({ searchParams }: ReviewPageProps) {
 
       {items.length === 0 ? (
         <Card>
-          <CardContent className="flex flex-col items-center gap-3 py-12 text-center">
+          <CardContent className="flex flex-col items-center gap-3 p-6 py-12 text-center">
             <div className="flex size-16 items-center justify-center rounded-3xl bg-success/10">
               <Brain className="size-8 text-success" />
             </div>

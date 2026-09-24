@@ -44,7 +44,7 @@ export default async function AchievementsPage() {
       </div>
 
       <Card>
-        <CardContent className="flex flex-wrap items-center justify-between gap-4">
+        <CardContent className="flex flex-wrap items-center justify-between gap-4 p-6">
           <div className="space-y-1.5">
             <p className="text-sm font-medium">
               Đã mở khóa <b className="text-primary">{unlockedCount}</b>/{all.length} huy hiệu
@@ -70,7 +70,7 @@ export default async function AchievementsPage() {
               const isUnlocked = unlocked.has(a.id);
               return (
                 <Card key={a.id} className={isUnlocked ? "card-hover" : "opacity-70"}>
-                  <CardContent className="flex items-start gap-3">
+                  <CardContent className="flex items-start gap-3 p-6">
                     <span className={`flex size-12 shrink-0 items-center justify-center rounded-2xl text-2xl ${isUnlocked ? "bg-secondary" : "bg-secondary/60 grayscale"}`}>
                       {a.icon}
                     </span>

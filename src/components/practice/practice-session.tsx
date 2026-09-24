@@ -348,9 +348,9 @@ export function PracticeSession({
                   key={`${token}-${i}`}
                   type="button"
                   onClick={() => setTokenOrder((t) => t.filter((_, j) => j !== i))}
-                  className="animate-scale-in rounded-xl bg-primary px-3 py-1.5 text-sm font-medium text-white shadow-sm"
+                  className="inline-flex animate-scale-in items-center gap-1.5 rounded-xl bg-primary px-3.5 py-2 text-sm font-medium text-white shadow-sm"
                 >
-                  {token} <span className="ml-1 text-white/70">✕</span>
+                  {token} <span className="text-white/70">✕</span>
                 </button>
               ))}
             </div>
@@ -365,7 +365,7 @@ export function PracticeSession({
                     type="button"
                     disabled={disabled}
                     onClick={() => setTokenOrder((o) => [...o, token])}
-                    className="rounded-xl border border-border bg-card px-3 py-1.5 text-sm font-medium transition-colors hover:border-primary/50 disabled:opacity-30"
+                    className="inline-flex items-center rounded-xl border border-border bg-card px-3.5 py-2 text-sm font-medium transition-colors hover:border-primary/50 disabled:opacity-30"
                   >
                     {token}
                   </button>

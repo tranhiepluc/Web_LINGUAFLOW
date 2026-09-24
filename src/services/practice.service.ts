@@ -71,14 +71,15 @@ function buildChoices(
 }
 
 function scrambleTokens(sentence: string, language: VocabLanguage): string[] {
+  const clean = sentence.replace(/[\s.,!?;:"'`，。！？；：、""''…·．]/g, "");
   if (language === "chinese") {
-    const chars = sentence.replace(/\s+/g, "").split("");
+    const chars = clean.split("");
     if (chars.length <= 14) return chars;
     const chunks: string[] = [];
     for (let i = 0; i < chars.length; i += 2) chunks.push(chars.slice(i, i + 2).join(""));
     return chunks;
   }
-  return sentence.split(/\s+/).filter(Boolean);
+  return clean.split(/\s+/).filter(Boolean);
 }
 
 export interface GenerateOptions {
